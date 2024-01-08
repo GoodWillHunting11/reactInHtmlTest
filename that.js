@@ -17,8 +17,11 @@
 //   }
 
 function Test() {
+  const word = "this word bro"
   return (
     <div>
+      <h1>Try this</h1>
+      <h2>{word}</h2>
       <p>"this should work"</p>
     </div>
   )
