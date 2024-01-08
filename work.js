@@ -1,27 +1,19 @@
-// help
-// const word = "HTML"
-
-// const changeWord = () => {
-//     document.getElementById("wordToChange").innerHTML = "REACT"
-// }
-
-// changeWord()
-
-
 import {
     ThirdwebProvider,
     ConnectWallet,
     embeddedWallet,
   } from "@thirdweb-dev/react";
 
-  export default function App() {
+  function App() {
     return (
       <ThirdwebProvider
         activeChain="goerli"
-        clientId="YOUR_CLIENT_ID"
+        clientId="C70hrtNwLpxvFGy0kztk5BPEl4QhMSBjmBseTfo9amYQu7jNvNVkNwivEigllsrQsB763kzLQ1tUuclmQRGXMw"
         supportedWallets={[embeddedWallet()]}
       >
         <ConnectWallet />
       </ThirdwebProvider>
     );
   }
+
+  ReactDOM.render(App, document.querySelector("#home"))
